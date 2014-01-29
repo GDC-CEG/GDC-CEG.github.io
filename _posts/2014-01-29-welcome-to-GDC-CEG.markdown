@@ -3,6 +3,7 @@ layout: post
 title:  "Welcome to GDC-CEG!"
 date:   2014-01-29 19:33:31
 categories: update
+comments: true
 ---
 
 GDC-CEG : Game Developers Club Of CEG
