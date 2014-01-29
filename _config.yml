@@ -4,18 +4,18 @@ disqus_shortname: GDC-CEG
 # Your site's domain goes here. When working locally use localhost server leave blank
 # PS. If you set this wrong stylesheets and scripts won't load and most links will break.
 # PPS. If you leave it blank for local testing home links won't work, they'll be fine for live domains though.
-#url:              http://localhost:4000
+url:              http://gdc-ceg.github.io
 
 # Owner/author information
 owner:
   name:           GDC-CEG
   avatar:         
-  bio:            
+  bio:            A discussion platform for everyone who likes to know and learn about Game development which includes Graphics, AI and Game Physics.
   email:          ksashikumark93@gmail.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
-  facebook:       
-  github:         
+  facebook:      https://www.facebook.com/groups/1374494039453422/ 
+  github:        https://github.com/GDC-CEG 
   stackexchange:  
   linkedin:       
   instagram:      
@@ -33,14 +33,9 @@ bing_verify:
 # Links to include in top navigation
 # For external links add external: true
 links:
-  - title: Theme Setup
-    url: /theme-setup
-  - title: External Link
-    url: http://mademistakes.com
-    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone:    America/New_York
+timezone:    Asia/Calcutta
 future:      true
 pygments:    true
 markdown:    kramdown
