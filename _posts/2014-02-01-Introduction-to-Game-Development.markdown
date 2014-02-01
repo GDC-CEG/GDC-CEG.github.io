@@ -5,7 +5,9 @@ date:   2014-02-01 22:11:00
 categories: update
 comments: true
 ---
-Hi all, We’ll start with small introduction about games and in the forthcoming tutorials you will be taught how to develop games from scratch using C++ with basic game concepts explained wherever necessary.
+
+
+Hi all, We’ll start with small introduction about games and in the forthcoming tutorials you will be taught how to develop games from scratch using C++ with basic game concepts explained wherever necessary. 
 
 
 So, Basically a game is nothing but a computer program like other software. Games involve human interaction with user interface. That is games give feedback to the user based on the input given to the computer. Input is given through various devices like keyboard keys, mouse, joystick, sensors, etc. Output is usually on a display device like monitor. Example of game includes Age of Empires, Mario, Angry Birds, etc.
@@ -58,23 +60,21 @@ Before you move further, you should know the following terms
 
 Having known all this, we’ll see what a game loop is. Irrespective of whether a game is 2d or 3d, the following game loop will be used in the game.
 
-Game Loop:
-1. Get Input
-2. Process
-3. Perform AI
-4. Render
-5. Goto step 1
+`Game Loop:`
+`1.` Get Input<br>
+`2.` Process<br>
+`3.` Perform AI<br>
+`4.` Render<br>
+`5.` Goto step 1
 
 Initially you get the input from the user. You process the input and change values of the objects in the game. Perform AI (Artificial Intelligence) in the game. AI can be the way the enemy moves or the way enemy shoots the hero or anything that sounds like an intelligent action. And then you render everything on screen and again go to step 1. Thus these 4 steps take place in every frame.
 
 In the forthcoming tutorials we’ll be developing small games using a multimedia library called SFML – Simple Fast Multimedia Library.
 
 Basically you need Visual Studio 2010 or higher. If you don’t have, install `Visual C++ 2010 Express` from the below link ( scroll down a little in the link to find it ).
-
 [Visual-Studio]
 
 Also download SFML-2.1 from the following link.
-
 [SFML]
 
 In the next post, we’ll set up the project and start creating a small game like ping pong. :)
