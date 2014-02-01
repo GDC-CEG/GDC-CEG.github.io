@@ -11,30 +11,75 @@ Follow these steps for setting up a project in Visual Studio for developing stuf
 
 `1. Download SFML`<br>
 
-Download SFML-2.1 [Here]: http://www.sfml-dev.org/download/sfml/2.1/
+Download SFML-2.1 [Here]
 
 `2. Install SFML`<br>
 
 Copy SFML-2.1 folder in C Drive. 
 
-<img src="http://gdc-ceg.github.io/images/1.PNG"><br>
+`3. Follow these steps :`
 
-<img src="http://gdc-ceg.github.io/images/2.PNG"><br>
+<img src="http://gdc-ceg.github.io/images/1.PNG"><br><br>
 
-<img src="http://gdc-ceg.github.io/images/3.PNG"><br>
+<img src="http://gdc-ceg.github.io/images/2.PNG"><br><br>
 
-<img src="http://gdc-ceg.github.io/images/4.PNG"><br>
+<img src="http://gdc-ceg.github.io/images/3.PNG"><br><br>
 
-<img src="http://gdc-ceg.github.io/images/5.PNG"><br>
+<img src="http://gdc-ceg.github.io/images/4.PNG"><br><br>
 
-<img src="http://gdc-ceg.github.io/images/6.PNG"><br>
+<img src="http://gdc-ceg.github.io/images/5.PNG"><br><br>
 
-<img src="http://gdc-ceg.github.io/images/7.PNG"><br>
+After creating a `.cpp` file, paste these contents into it:
 
-<img src="http://gdc-ceg.github.io/images/8.PNG"><br>
+{% highlight ruby linenos %}
+{% raw %}
+#include <SFML/Graphics.hpp>
 
-<img src="http://gdc-ceg.github.io/images/9.PNG"><br>
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
 
-<img src="http://gdc-ceg.github.io/images/10.PNG"><br>
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.draw(shape);
+        window.display();
+    }
+
+    return 0;
+}
+{% endraw %}
+{% endhighlight %}
+<br><br>
+
+<img src="http://gdc-ceg.github.io/images/6.PNG"><br><br>
+
+<img src="http://gdc-ceg.github.io/images/7.PNG"><br><br>
+
+<img src="http://gdc-ceg.github.io/images/8.PNG"><br><br>
+
+<img src="http://gdc-ceg.github.io/images/t.PNG"><br><br>
+
+`NOTE: ` If you are using Visual Studio 2013 or higher versions, change `Enable Incremental Linking` to `Yes`.<br> 
+
+<img src="http://gdc-ceg.github.io/images/10.PNG"><br><br>
+
+Once you finish these and before debugging the project, copy the contents of `bin` folder in `SFML-2.1` directory (that you already have in C Drive) to the `debug` folder in your `Project's Directory`. This is very important step!
+
+
+After that `debug` the project and Here it works! :)
 
 <img src="http://gdc-ceg.github.io/images/11.PNG"><br>
+
+
+
+[Here]: http://www.sfml-dev.org/download/sfml/2.1/
