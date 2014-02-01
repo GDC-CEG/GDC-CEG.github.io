@@ -16,28 +16,28 @@ Games contain two components: Art and Programming. Art includes all that you see
 
 Below is a screen shot from a game called Braid. As you can see, the yellow background is a single image. Similarly the cliff or grassy platform is another image. The bridge is a separate image and the doors too! These images are placed on over the other in layers to give you the illusion of a scene.
 
-<img src="../images/image1.jpg"> 
+<img src="images/image1.jpg"> 
 
 
 In the below screen shot from a game, you can see that single image has been placed near to one another to give you an illusion of a platform. These images are highlighted in yellow . Similarly single fire/lava image has been replicated to give an illusion of a continuous image.
 
-<img src="../images/image2.jpg"> 
+<img src="images/image2.jpg"> 
 
 
 These single images are called tiles. These tiles are taken from a bigger image file generally known as sprite sheet. Below is the sprite sheet of the previous screenshot and you can see that fire/lava and brick are single image.
 
-<img src="../images/image3.jpg"> 
+<img src="images/image3.jpg"> 
 
 
 And you would have noticed the characters in 2d games jump and run with small animations. They are also separate images of the character shown in succession one over the other at a very high speed. Such an image file with all possible character movements is called character sprite sheet. The below is the character sprite sheet of a game called Megaman.
 
-<img src="../images/image4.jpg"> 
+<img src="images/image4.jpg"> 
 
 
 Before you move further, you should know the following terms
 `Pixel` - Pixel or picture element is the smallest point on a monitor that you can lighten or assign color to.
 
-<img src="../images/image5.jpg"> 
+<img src="images/image5.jpg"> 
 
 
 `Frame rate` – Frame rate is the speed with which the screen is refreshed within a second. If the frame rate is 20, then the screen is refreshed 20 times within a second
@@ -45,7 +45,7 @@ Before you move further, you should know the following terms
 
 `Screen Axis` – Like the geometric axis, in screen axis, the origin (0,0) is the top left corner of the screen and x axis increments towards the right and y axis increments towards the bottom of screen.
 
-<img src="../images/image6.jpg"> 
+<img src="images/image6.jpg"> 
 
 
 `Rendering` - Whenever something is drawn or shown on screen we call it as rendering. Coloring a pixel on screen is also known as rendering.
@@ -53,7 +53,7 @@ Before you move further, you should know the following terms
 
 `Collision Detection` – Collision Detection is the mechanism to find whether two objects on screen are colliding or not. Checking  whether two rectangles collide or not is called rectangular collision detection. Here shape1 and shape2 are colliding with each other.
 
-<img src="../images/image7.jpg">
+<img src="images/image7.jpg">
  
 
 Having known all this, we’ll see what a game loop is. Irrespective of whether a game is 2d or 3d, the following game loop will be used in the game.
@@ -70,9 +70,11 @@ Initially you get the input from the user. You process the input and change valu
 In the forthcoming tutorials we’ll be developing small games using a multimedia library called SFML – Simple Fast Multimedia Library.
 
 Basically you need Visual Studio 2010 or higher. If you don’t have, install `Visual C++ 2010 Express` from the below link ( scroll down a little in the link to find it ).
+
 [Visual-Studio]
 
 Also download SFML-2.1 from the following link.
+
 [SFML]
 
 In the next post, we’ll set up the project and start creating a small game like ping pong. :)
