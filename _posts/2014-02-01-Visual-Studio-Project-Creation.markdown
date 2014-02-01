@@ -31,7 +31,7 @@ Copy SFML-2.1 folder in C Drive.
 
 After creating a `.cpp` file, paste these contents into it:
 
-{% highlight ruby linenos %}
+{% highlight ruby%}
 {% raw %}
 #include <SFML/Graphics.hpp>
 
