@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Visual Studio Project Creation"
+date:   2014-01-29 23:43:31
+categories: update
+comments: true
+---
+
+Follow these steps for setting up a project in Visual Studio for developing stuffs using SFML:
+(These assumes that you are using Windows platform)
+
+`1. Download SFML`<br>
+
+Download SFML-2.1 [Here]: http://www.sfml-dev.org/download/sfml/2.1/
+
+`2. Install SFML`<br>
+
+Copy SFML-2.1 folder in C Drive. 
+
+
+
