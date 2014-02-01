@@ -80,6 +80,9 @@ After that `debug` the project and Here it works! :)
 
 <img src="http://gdc-ceg.github.io/images/11.PNG"><br>
 
+For More reference visit [This]
 
+If you have any problems in setting up the project, do comment here or in our Facebook group!
 
 [Here]: http://www.sfml-dev.org/download/sfml/2.1/
+[This]: http://www.sfml-dev.org/tutorials/2.1/start-vc.php
