@@ -60,7 +60,7 @@ Before you move further, you should know the following terms
 
 Having known all this, we’ll see what a game loop is. Irrespective of whether a game is 2d or 3d, the following game loop will be used in the game.
 
-`Game Loop:`
+`Game Loop:`<br>
 `1.` Get Input<br>
 `2.` Process<br>
 `3.` Perform AI<br>
