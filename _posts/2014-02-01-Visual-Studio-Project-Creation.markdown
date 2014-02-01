@@ -4,6 +4,7 @@ title:  "Visual Studio Project Creation"
 date:   2014-02-01 23:43:31
 categories: update
 comments: true
+share: true
 ---
 
 Follow these steps for setting up a project in Visual Studio for developing stuffs using SFML:
