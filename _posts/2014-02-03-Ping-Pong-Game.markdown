@@ -18,7 +18,7 @@ You can also find this on our Github: [Ping-Pong]
 #include <iostream>
 
 #include "SFML\Graphics.hpp"
-#include "Pingpong.h"
+#include "PingPong.h"
 
 int main()
 {
@@ -45,17 +45,17 @@ int main()
         }
 
 
-		    handle_input();
+        handle_input();
 
-		    update();
+        update();
 
-		    perform_ai();
+        perform_ai();
 
         // clear the window with black color
-		    window->clear(sf::Color::White);
+        window->clear(sf::Color::White);
 	    
         // draw everything here...
-		    display(window);
+        display(window);
 
         // end the current frame
         window->display();
@@ -104,31 +104,31 @@ int SCORE_PLAYER = 0,SCORE_AI = 0;
 void init_players()
 {
     //Assign values to Ball Rectangle
-	  ball.left   = 30;
-	  ball.top    = 30;
-	  ball.width  = 20;
-	  ball.height = 20;
+    ball.left   = 30;
+    ball.top    = 30;
+    ball.width  = 20;
+    ball.height = 20;
 
     //Assign values to Player Slider Rectangle
-  	slider_right.left   = 550;
-	  slider_right.top    = 200;
-	  slider_right.width  = 20;
-	  slider_right.height = 200;
+    slider_right.left   = 550;
+    slider_right.top    = 200;
+    slider_right.width  = 20;
+    slider_right.height = 200;
 
     //Assign values to AI Slider Rectangle
-  	slider_left.left   = 30;
-	  slider_left.top    = 200;
-	  slider_left.width  = 20;
-	  slider_left.height = 200;
+    slider_left.left   = 30;
+    slider_left.top    = 200;
+    slider_left.width  = 20;
+    slider_left.height = 200;
 
     //Fill Colour to the Rectangle Shapes for Player Slider, AI Slider and Ball respectively
-  	R1.setFillColor(sf::Color::Red);
-  	R2.setFillColor(sf::Color::Blue);
-  	R3.setFillColor(sf::Color::Black);
+    R1.setFillColor(sf::Color::Red);
+    R2.setFillColor(sf::Color::Blue);
+    R3.setFillColor(sf::Color::Black);
 
     //Apply velocity to the Ball
-	  ballXvel = BALL_VEL;
-	  ballYvel = BALL_VEL;
+    ballXvel = BALL_VEL;
+    ballYvel = BALL_VEL;
 }
 
 void handle_input()
@@ -138,70 +138,70 @@ void handle_input()
       playerYvel = -(SLIDER_VEL);
 
     //If Down arrow is pressed
-  	else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-  		playerYvel = SLIDER_VEL;
+    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
+      playerYvel = SLIDER_VEL;
 
     //If no key is pressed
-  	else
-  		playerYvel = 0;
+    else
+      playerYvel = 0;
 }
 
 void update()
 {
     //If ball collides with any of the two sliders
-  	if(ball.intersects(slider_right) || ball.intersects(slider_left) )
-  		ballXvel = -(ballXvel);
+    if(ball.intersects(slider_right) || ball.intersects(slider_left) )
+      ballXvel = -(ballXvel);
 
     //If ball collides with the top and bottom walls
-  	if(ball.top < 0 || (ball.top+ball.height) > 600)
-  		ballYvel = -(ballYvel);
+    if(ball.top < 0 || (ball.top+ball.height) > 600)
+      ballYvel = -(ballYvel);
 
     //If ball collides with the left side wall
-  	if(ball.left < 0)
-  	{
-  		SCORE_PLAYER +=100;
-  		ballXvel      = -(ballXvel);
-  	}
+    if(ball.left < 0)
+    {
+      SCORE_PLAYER +=100;
+      ballXvel      = -(ballXvel);
+    }
 
     //If ball collides with the right side wall
-  	else if((ball.left+ball.width) > 600)
-  	{
-  		SCORE_AI += 100;
-  		ballXvel  = -(ballXvel);
-  	}
+    else if((ball.left+ball.width) > 600)
+    {
+      SCORE_AI += 100;
+      ballXvel  = -(ballXvel);
+    }
     
     //Change ball's position with respect to velocity
-  	ball.left += ballXvel;
-  	ball.top  += ballYvel;
+    ball.left += ballXvel;
+    ball.top  += ballYvel;
 
     //Change Player Slider's position with respect to velocity
-  	slider_right.top += playerYvel;
+    slider_right.top += playerYvel;
 }
 
 void perform_ai()
 {
     //If Ball is above the AI Slider 
     if(ball.top < slider_left.top)
-  		slider_left.top -= SLIDER_VEL;
-
+      slider_left.top -= SLIDER_VEL;
+  
     //If Ball is below the AI Slider
-  	else if(ball.top > (slider_left.top + slider_left.height))
-  		slider_left.top += SLIDER_VEL;
+    else if(ball.top > (slider_left.top + slider_left.height))
+      slider_left.top += SLIDER_VEL;
 }
 
 void display(sf::RenderWindow *window)
 {
     //Displace the Player Slider and draw it on screen
-  	R1.setPosition(slider_right.left,slider_right.top);
-  	window->draw(R1);
+    R1.setPosition(slider_right.left,slider_right.top);
+    window->draw(R1);
 
     //Displace the AI Slider and draw it on screen
-  	R2.setPosition(slider_left.left,slider_left.top);
-  	window->draw(R2);
+    R2.setPosition(slider_left.left,slider_left.top);
+    window->draw(R2);
  
     //Displace the Ball and draw it on screen
-   	R3.setPosition(ball.left,ball.top);
-  	window->draw(R3);
+    R3.setPosition(ball.left,ball.top);
+    window->draw(R3);
 }
 {% endraw %}
 {% endhighlight %}
