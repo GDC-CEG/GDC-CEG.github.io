@@ -25,11 +25,11 @@ int main()
     // create the window to show your game 
     sf::RenderWindow *window;
 
-  	window=new sf::RenderWindow(sf::VideoMode(600, 600),"My window");
-	  window->setFramerateLimit(20);
+    window=new sf::RenderWindow(sf::VideoMode(600, 600),"My window");
+    window->setFramerateLimit(20);
     
     //Initialise the game objects
-	  init_players();
+    init_players();
 
     // run the program as long as the window is open
     while (window->isOpen())
