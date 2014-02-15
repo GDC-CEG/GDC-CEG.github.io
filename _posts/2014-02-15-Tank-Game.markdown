@@ -43,14 +43,14 @@ window->draw(*bgsprite); //drawing sprite on window
 
 So now its time to create a small tank game. In this tutorial we’ll display background and a tank and
 make it move in all 4 directions.<br>
-   1. Create a project. <br>
-   2. Create a folder named as Assets inside the Debug folder . Debug folder is inside your project’s folder. <br>
+  1. Create a project. <br>
+  2. Create a folder named as Assets inside the Debug folder . Debug folder is inside your project’s folder. <br>
 
 Highlighted is the project folder. 
 
 <img src="http://gdc-ceg.github.io/images/Tank-2.PNG"><br><br>
 
-   3. Put the following images inside the Assets folder. The following are sample. Original images are in the link given below.<br>
+  3. Put the following images inside the Assets folder. The following are sample. Original images are in the link given below.<br>
 
 [props.png]<br>
 <img src="http://gdc-ceg.github.io/images/Tank-3.PNG"><br><br>
