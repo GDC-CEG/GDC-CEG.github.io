@@ -112,8 +112,7 @@ int main()
 }
 
 {% endraw %}
-{% endhighlight %}<br><br>
-
+{% endhighlight %}<br>
 
 `Tank.h`<br>
 {% highlight ruby%}
@@ -159,7 +158,7 @@ public:
 #endif
 
 {% endraw %}
-{% endhighlight %}<br><br>
+{% endhighlight %}<br>
 
 `Tank.cpp`<br>
 {% highlight ruby%}
@@ -263,7 +262,7 @@ void Tank::setPosition(int x,int y)
 }
 
 {% endraw %}
-{% endhighlight %}<br><br>
+{% endhighlight %}<br>
 
 You’ll get an output window similar to the following with tank that can be moved using arrow keys
 
